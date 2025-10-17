@@ -523,10 +523,10 @@ sup {
 /* Main hero headline — usually sits in the intro section */
 .hero-headline {
   color: var(--color-accent-primary); /* Uses your brand's dominant color */
-  max-width: 10ch; /* Optimal line length for readability (~40 characters) */
+  max-width: 20ch; /* Optimal line length for readability (~40 characters) */
   text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
   margin-inline: auto; /* Horizontally centers the text in its container */
-  font-size: 4rem;
+  font-size: 1.5rem;
 }
 
 /* Large project title — appears on individual project pages */
@@ -685,6 +685,7 @@ a.nav-link-primary:hover {
   display: flex;
   flex-direction: column;
 }
+
 .hero-header {
   min-height: 6rem; /* Space reserved for logo + nav */
 }
@@ -710,16 +711,30 @@ a.nav-link-primary:hover {
   /* TODO: Adjust the width of the logo on mobile devices here */
 }
 
+#background-video {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  height: 22vh;
+  width: 100%;
+  opacity: 80%;
+}
+
 .hero-headline-wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 3rem;
+  /* gap: 3rem; */
   align-items: center;
   justify-content: center;
-  padding: var(--padding-small);
+  padding: var(--padding-xsmall);
   text-align: center; /* Keeps text centered */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .hero-icon {
@@ -1359,13 +1374,23 @@ to keep your styles reusable and consistent.
   /* TODO: Adjust  layout for tablets */
 
   .hero-headline {
-    font-size: 6rem;
+    font-size: 1rem;
     max-width: 30ch; /* Optimal line length for readability (~40 characters) */
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 
+@media (min-width: 768px) {
+  .hero-headline {
+    font-size: 1.5rem;
+    max-width: 30ch; /* Optimal line length for readability (~40 characters) */
+  }
+  #background-video {
+    height: 70vh;
+    width: 100%;
+  }
+}
 /* Switch from mobile to desktop navigation */
 
 @media (min-width: 992px) {
@@ -1448,7 +1473,7 @@ to keep your styles reusable and consistent.
 
   .hero-headline {
     max-width: 40ch; /* Optimal line length for readability (~40 characters) */
-    font-size: 10rem;
+    font-size: 2.5rem;
   }
 
   .hero-headline-wrapper {
