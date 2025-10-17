@@ -520,6 +520,7 @@ sup {
   max-width: 40ch; /* Optimal line length for readability (~40 characters) */
   text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
   margin-inline: auto; /* Horizontally centers the text in its container */
+  font-size: 15rem;
 }
 
 /* Large project title — appears on individual project pages */
