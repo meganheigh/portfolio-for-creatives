@@ -81,7 +81,7 @@ Following the steps below you will be able to get the plugin up and running. If 
 
 # Public methods
 
-See the [example code here](https://github.com/arielsalminen/responsive-nav.js/blob/master/demos/public-events/index.htmll) for the usage.
+See the [example code here](https://github.com/arielsalminen/responsive-nav.js/blob/master/demos/public-events/index.html) for the usage.
 
 `nav.toggle();`
 

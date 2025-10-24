@@ -65,7 +65,7 @@
 @import url("animated-gradient.css");
 
 /* File for adding a glitch animation to your 404 error page */
-@import url("error.css");
+/* @import url("error.css"); */
 
 /* File for adding text stroke (outline) effect */
 @import url("text-stroke.css");
@@ -200,7 +200,8 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor: url("../assets/temp/up-cursor.png"), auto !important;
+  /* cursor: url("../assets/temp/up-cursor.png"), auto !important; */
+
   /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
@@ -485,6 +486,10 @@ h6 {
   color: var(--h6-color);
 }
 
+.bio {
+  max-width: 60ch;
+  font-size: 1.5rem;
+}
 /* ------------------------------------------------------------------ */
 /* 📝 Paragraph and Text Styles                                       */
 /* Base text styles for body copy, bold, italic, and fine print       */
@@ -708,12 +713,12 @@ a.nav-link-primary:hover {
 }
 
 #background-video {
-  position: relative;
+  /* position: relative; */
   right: 0;
-  bottom: 0;
-  height: 22vh;
+  /* bottom: 0; */
+  height: 20vh;
   width: 100%;
-  opacity: 80%;
+  opacity: 100%;
 }
 
 .hero-headline-wrapper {
@@ -724,7 +729,7 @@ a.nav-link-primary:hover {
   /* gap: 3rem; */
   align-items: center;
   justify-content: center;
-  padding: var(--padding-xsmall);
+  padding: var(--padding-small);
   text-align: center; /* Keeps text centered */
   /* position: absolute;
   top: 0;
@@ -768,7 +773,7 @@ a.nav-link-primary:hover {
 /* -------------------------------------------------------------------------- */
 
 .full-width-section {
-  max-width: 90ch;
+  max-width: 100%;
   min-height: 60vh; /* Takes up most of the screen height */
   display: flex;
   flex-direction: column;
@@ -1245,7 +1250,7 @@ a.nav-link-primary:hover {
    Holding Page Styles
    ----------------------------------------------------------------
    Includes layout, typography, and visual effects for the demo
-   landing page (index.htmll).
+   landing page (index.html).
 
    Related files:
      • CSS: styles/interactive-blobs.css
@@ -1304,7 +1309,9 @@ a.nav-link-primary:hover {
 }
 
 .error-page-animation {
-  width: 25rem;
+  /* width: 25rem; */
+  min-height: 40rem;
+  min-width: 60rem;
 }
 
 /*
@@ -1331,8 +1338,8 @@ to keep your styles reusable and consistent.
 
 .play-page {
   .hero-headline-wrapper {
-    padding-top: var(--padding-small);
-    padding-bottom: var(--padding-small);
+    padding-top: var(--padding-tiny);
+    padding-bottom: var(--padding-tiny);
     padding-left: var(--padding-medium);
     padding-right: var(--padding-medium);
   }
@@ -1481,8 +1488,8 @@ to keep your styles reusable and consistent.
   }
 
   .hero-headline-wrapper {
-    padding-top: var(--padding-jumbo);
-    padding-bottom: var(--padding-jumbo);
+    padding-top: var(--padding-large);
+    padding-bottom: var(--padding-large);
     padding-left: var(--padding-ultra);
     padding-right: var(--padding-ultra);
   }

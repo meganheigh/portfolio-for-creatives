@@ -29,7 +29,7 @@ Here’s how you can bring your portfolio online in no time:
    👉 URL: `https://github.com/jamesdneufeld/portfolio-for-creatives`
 
 2. **Open the project in Visual Studio Code**  
-   Start by making a small change in `index.htmll`. Look for the line that says:  
+   Start by making a small change in `index.html`. Look for the line that says:  
    `"Portfolio Launching Soon"`  
    Replace it with something like:  
    `"Welcome to My Site"` or `"Hi, I'm [Your Name]!"`  
@@ -52,7 +52,7 @@ Here’s how you can bring your portfolio online in no time:
 
 Get your portfolio up and running in seconds:
 
-1. Open `index.htmll` if you're using a splash page
+1. Open `index.html` if you're using a splash page
 2. Or open `index.html` to go straight to your projects
 3. Begin customizing project-1.html to showcase your first real project!
 
@@ -102,7 +102,7 @@ After making these changes, visit your live site to see the changes in action!
 
 | Page Name                 | Description                                    |
 | ------------------------- | ---------------------------------------------- |
-| `index.htmll`             | Holding page (optional intro/splash)           |
+| `index.html`              | Holding page (optional intro/splash)           |
 | `index.html`              | Classic work grid layout                       |
 | `work-sidebar.html`       | Work grid with sticky sidebar navigation       |
 | `work-titles-below.html`  | Project titles below thumbnails                |
