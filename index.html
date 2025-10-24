@@ -2,14 +2,13 @@
 <html lang="en">
   <head>
     <title>
-      Free Creative Portfolio Template: October 2025 Version | Holding Page
+      Free Creative Portfolio Template: October 2025 Version | Work Page
     </title>
     <meta
       name="description"
       content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!"
     />
     <meta charset="utf-8" />
-    <meta http-equiv="refresh" content="10; url=work-grayscale.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
@@ -34,41 +33,179 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/interactive-blobs.css" />
   </head>
-  <body class="holding-page">
-    <div class="blob-container">
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
-      <div class="blob blob-3"></div>
-    </div>
 
-    <div class="noise-overlay"></div>
-    <div class="holding-page-wrapper">
-      <div class="holding-page-inner-container">
-        <a href="work-grayscale.html">
-          <figure class="holding-page-animation">
-            <img
-              src="assets/branding-images/logo.svg"
-              alt="Your portfolio logo"
-            />
-          </figure>
-          <h1 class="holding-page-title">Meg's portfolio coming soon</h1>
-        </a>
+  <body class="work-page" id="top">
+    <section class="hero">
+      <header class="hero-header">
+        <ul class="nav-branding">
+          <!-- Logo (standalone LI) -->
+          <li class="nav-branding-logo">
+            <a href="index.htmll">
+              <img
+                src="assets/branding-images/MH_PersonalLogo.svg"
+                alt="Your portfolio logo"
+              />
+            </a>
+          </li>
+          <li class="nav-branding-item">
+            <ul class="nav-branding-group">
+              <li class="nav-branding-item">
+                <a href="index.html" class="nav-link-primary">Work</a>
+              </li>
+              <li class="nav-branding-item">
+                <a href="play.html" class="nav-link-primary">Play</a>
+              </li>
+              <li class="nav-branding-item">
+                <a href="about.html" class="nav-link-primary">About</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+
+      <video autoplay muted loop playsinline id="background-video">
+        <source
+          src="assets/Project photos/Header Video/7661016-hd_1920_1080_25fps.mp4"
+        />
+      </video>
+
+      <div class="hero-headline-wrapper">
+        <h1 class="hero-headline">
+          Megan Heigh is a designer and illustrator who holds wild ideas
+          tenderly.
+        </h1>
       </div>
+      <footer class="hero-footer"></footer>
+    </section>
 
-      <div class="holding-page-footer">
-        <p class="holding-page-copyright">
+    <main class="main-work-section">
+      <section class="portfolio">
+        <ul class="grid">
+          <li class="work-page-grid-item rounded-large">
+            <a href="project-1.html" class="grayscale">
+              <figure>
+                <img
+                  src="assets/Project photos/Dirty Laundry Cover.jpg"
+                  width="1920"
+                  height="1080"
+                  class="rounded-large"
+                  loading="lazy"
+                  alt="Describe your project"
+                />
+              </figure>
+            </a>
+          </li>
+
+          <li class="work-page-grid-item rounded-large">
+            <a href="project-3.html" class="grayscale">
+              <figure>
+                <img
+                  src="assets/Project photos/Photos(Cover only)/Tend Project Cover.jpg"
+                  width="1920"
+                  height="1080"
+                  class="rounded-large"
+                  loading="lazy"
+                  alt="Describe your project"
+                />
+              </figure>
+            </a>
+          </li>
+          <li class="work-page-grid-item rounded-large">
+            <a href="project-2.html" class="grayscale">
+              <figure>
+                <img
+                  src="assets/Project photos/Photos(Cover only)/The House Project Cover.jpg"
+                  width="1920"
+                  height="1080"
+                  class="rounded-large"
+                  loading="lazy"
+                  alt="Describe your project"
+                />
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <section class="full-width-section">
+      <div class="full-width-headline-wrapper">
+        <h3>
+          Megan is a Vancouver-based designer crafting warm, story-driven brands
+          inspired by the wild, cozy spaces, and life’s simple pleasures. She
+          designs with feeling, curiosity, and stubborn determination.
+        </h3>
+      </div>
+    </section>
+    <ul class="footer-global">
+      <li class="footer-tagline">
+        <h2>Contact</h2>
+        <p>
+          I'm always open to questions, collaborations, or to Just chat about
+          design.
+        </p>
+      </li>
+
+      <li class="footer-highlights">
+        <h2>Awards & Recognition</h2>
+        <ul class="footer-awards-list">
+          <li class="footer-item">
+            <a href="#">Dean’s List – 2022-2025</a>
+          </li>
+          <li class="footer-item">
+            <a href="#"
+              >Award for Packaging Design (Single)– Dirty Laundry Packaging,
+              2025</a
+            >
+          </li>
+        </ul>
+      </li>
+      <li class="footer-contact-social">
+        <h2>Contact & Social</h2>
+        <ul class="footer-socials-list">
+          <li class="footer-item">
+            <a href="https://www.instagram.com/megan.heigh/">Insta</a>
+          </li>
+          <li class="footer-item">
+            <a href="https://www.linkedin.com/in/megan-heigh-ba1234296/"
+              >LinkedIn</a
+            >
+          </li>
+          <li class="footer-item">
+            <a href="https://www.behance.net/megan_heigh">Behance</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="footer-full-width">
+        <p><a href="#top">Smooth scroll to the top</a></p>
+        <!-- <p class="footer-fineprint">
           &copy; <span id="copyright-years">2020-</span>. Hand crafted with
           <span class="heart">❤</span>
           by James Neufeld.
-        </p>
+        </p> -->
         <script>
           document.getElementById("copyright-years").textContent +=
             new Date().getFullYear();
         </script>
-      </div>
-    </div>
-    <script src="./js/interactive-blobs.js"></script>
+      </li>
+    </ul>
+
+    <div id="myID" class="bottomMenu hide"><a href="#">Back to top</a></div>
+
+    <script type="text/javascript">
+      myID = document.getElementById("myID");
+
+      var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 800) {
+          myID.className = "bottomMenu show";
+        } else {
+          myID.className = "bottomMenu hide";
+        }
+      };
+
+      window.addEventListener("scroll", myScrollFunc);
+    </script>
   </body>
 </html>

@@ -112,8 +112,8 @@
   --color-fallback: #0e0e0e; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
   --color-bg: #fdfdfd;
-  --color-bg-about: #f5f5f5;
-  --color-bg-footer: #f5f5f5;
+  --color-bg-about: #ffffff;
+  --color-bg-footer: #ffffff;
   --color-bg-holding-page: rgba(82, 0, 255, 0.6);
   /* Headings */
   --h1-color: #461224;
@@ -131,15 +131,15 @@
   --color-text-work-grid-title: #ffffff;
   /* Link States */
   --color-link: #461224;
-  --color-link-hover: #461224;
+  --color-link-hover: #98244d;
   --color-link-visited: #461224;
   /* Navigation */
   --color-nav-link: #461224;
-  --color-nav-link-hover: #461224;
+  --color-nav-link-hover: #98244d;
   --color-nav-arrow: #461224;
-  --color-nav-arrow-hover: #000;
+  --color-nav-arrow-hover: #98244d;
   --color-nav-arrow-stroke: #461224;
-  --color-nav-arrow-stroke-hover: #461224;
+  --color-nav-arrow-stroke-hover: #98244d;
   /* Components */
   --color-bg-full-width: #f5f5f5;
   --color-bg-project-description: #f5f5f5;
@@ -521,7 +521,7 @@ sup {
   max-width: 20ch; /* Optimal line length for readability (~40 characters) */
   text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
   margin-inline: auto; /* Horizontally centers the text in its container */
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 
@@ -726,11 +726,11 @@ a.nav-link-primary:hover {
   justify-content: center;
   padding: var(--padding-xsmall);
   text-align: center; /* Keeps text centered */
-  position: absolute;
+  /* position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0; */
 }
 
 .hero-icon {
@@ -788,7 +788,8 @@ a.nav-link-primary:hover {
   align-items: center;
   justify-content: center;
   padding: var(--padding-small);
-  text-align: left; /* Keeps the text centered */
+  text-align: center; /* Keeps the text centered */
+  color: #ffffff;
 }
 
 .section-container {
@@ -1247,7 +1248,7 @@ a.nav-link-primary:hover {
    Holding Page Styles
    ----------------------------------------------------------------
    Includes layout, typography, and visual effects for the demo
-   landing page (index.html).
+   landing page (index.htmll).
 
    Related files:
      • CSS: styles/interactive-blobs.css
@@ -1332,6 +1333,12 @@ to keep your styles reusable and consistent.
 */
 
 .play-page {
+  .hero-headline-wrapper {
+    padding-top: var(--padding-small);
+    padding-bottom: var(--padding-small);
+    padding-left: var(--padding-medium);
+    padding-right: var(--padding-medium);
+  }
   /* Add page-specific layout or container styles here */
 }
 

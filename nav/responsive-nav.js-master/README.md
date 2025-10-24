@@ -1,88 +1,87 @@
-
 # Responsive Nav
 
 ### Responsive navigation plugin without library dependencies and with fast touch screen support.
 
 [Responsive Nav](http://responsive-nav.com) is a tiny JavaScript plugin which weighs only 1.3kb minified and Gzip’ed, and helps you to create a toggled navigation for small screens. It uses touch events and CSS3 transitions for the best possible performance. It also contains a “clever” workaround that makes it possible to transition from `height: 0` to `height: auto`, which isn’t normally possible with CSS3 transitions.
 
-
 #### Features:
 
-* Simple, semantic markup.
-* Weighs only 1.3kb minified and Gzip’ed.
-* Doesn’t require any external library.
-* Uses CSS3 transitions and touch events.
-* Supports RequireJS and multiple instances.
-* Removes the 300ms delay between a physical tap and the click event.
-* Makes it possible to use CSS3 transitions with height: auto.
-* Built with accessibility in mind, meaning that everything works on screen readers and with JavaScript disabled, too.
-* Works in all major desktop and mobile browsers, including IE 6 and up.
-* Free to use under the MIT license.
-
+- Simple, semantic markup.
+- Weighs only 1.3kb minified and Gzip’ed.
+- Doesn’t require any external library.
+- Uses CSS3 transitions and touch events.
+- Supports RequireJS and multiple instances.
+- Removes the 300ms delay between a physical tap and the click event.
+- Makes it possible to use CSS3 transitions with height: auto.
+- Built with accessibility in mind, meaning that everything works on screen readers and with JavaScript disabled, too.
+- Works in all major desktop and mobile browsers, including IE 6 and up.
+- Free to use under the MIT license.
 
 # Demos
 
-* [Fixed positioned one page demo](http://www.adtile.me/fixed-nav/) using smooth scrolling. View source on GitHub: [adtile/fixed-nav](https://github.com/adtile/fixed-nav)
-* [Advanced demo](http://responsive-nav.com/demo/) (View the [source code](https://github.com/arielsalminen/responsive-nav.js/tree/master/demos/advanced-left-navigation))
-* [Official website](http://responsive-nav.com) (works as a demo, too!)
-* [Simple demo with IE support](http://responsive-nav.com/demo-respondjs/) (View the [source code](https://github.com/arielsalminen/responsive-nav.js/tree/master/demos/ie-support-using-respondjs))
-* 11(!) additional examples included in this repository's [demos](https://github.com/arielsalminen/responsive-nav.js/tree/master/demos) folder.
-
+- [Fixed positioned one page demo](http://www.adtile.me/fixed-nav/) using smooth scrolling. View source on GitHub: [adtile/fixed-nav](https://github.com/adtile/fixed-nav)
+- [Advanced demo](http://responsive-nav.com/demo/) (View the [source code](https://github.com/arielsalminen/responsive-nav.js/tree/master/demos/advanced-left-navigation))
+- [Official website](http://responsive-nav.com) (works as a demo, too!)
+- [Simple demo with IE support](http://responsive-nav.com/demo-respondjs/) (View the [source code](https://github.com/arielsalminen/responsive-nav.js/tree/master/demos/ie-support-using-respondjs))
+- 11(!) additional examples included in this repository's [demos](https://github.com/arielsalminen/responsive-nav.js/tree/master/demos) folder.
 
 # Usage instructions
 
 Following the steps below you will be able to get the plugin up and running. If you notice any bugs, please post them to [GitHub issues](https://github.com/arielsalminen/responsive-nav.js/issues).
 
 1. Link files:
-	```html
-		<!-- Put these into the <head> -->
-		<link rel="stylesheet" href="responsive-nav.css">
-		<script src="responsive-nav.js"></script>
-	```
+
+   ```html
+   <!-- Put these into the <head> -->
+   <link rel="stylesheet" href="responsive-nav.css" />
+   <script src="responsive-nav.js"></script>
+   ```
 
 1. Add markup:
-	```html
-		<nav class="nav-collapse">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Projects</a></li>
-				<li><a href="#">Contact</a></li>
-		 	</ul>
-		</nav>
-	```
+
+   ```html
+   <nav class="nav-collapse">
+     <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Projects</a></li>
+       <li><a href="#">Contact</a></li>
+     </ul>
+   </nav>
+   ```
 
 1. Hook up the plugin:
-	```html
-	<!-- Put this right before the </body> closing tag -->
-		<script>
-			var nav = responsiveNav(".nav-collapse");
-		</script>
-	```
+
+   ```html
+   <!-- Put this right before the </body> closing tag -->
+   <script>
+     var nav = responsiveNav(".nav-collapse");
+   </script>
+   ```
 
 1. Customizable options:
-	```javascript
-		var nav = responsiveNav(".nav-collapse", { // Selector
-			animate: true, // Boolean: Use CSS3 transitions, true or false
-			transition: 284, // Integer: Speed of the transition, in milliseconds
-			label: "Menu", // String: Label for the navigation toggle
-			insert: "before", // String: Insert the toggle before or after the navigation
-			customToggle: "", // Selector: Specify the ID of a custom toggle
-			closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
-			openPos: "relative", // String: Position of the opened nav, relative or static
-			navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
-			navActiveClass: "js-nav-active", // String: Class that is added to <html> element when nav is active
-			jsClass: "js", // String: 'JS enabled' class which is added to <html> element
-			init: function(){}, // Function: Init callback
-			open: function(){}, // Function: Open callback
-			close: function(){} // Function: Close callback
-		});
-	```
-
+   ```javascript
+   var nav = responsiveNav(".nav-collapse", {
+     // Selector
+     animate: true, // Boolean: Use CSS3 transitions, true or false
+     transition: 284, // Integer: Speed of the transition, in milliseconds
+     label: "Menu", // String: Label for the navigation toggle
+     insert: "before", // String: Insert the toggle before or after the navigation
+     customToggle: "", // Selector: Specify the ID of a custom toggle
+     closeOnNavClick: false, // Boolean: Close the navigation when one of the links are clicked
+     openPos: "relative", // String: Position of the opened nav, relative or static
+     navClass: "nav-collapse", // String: Default CSS class. If changed, you need to edit the CSS too!
+     navActiveClass: "js-nav-active", // String: Class that is added to <html> element when nav is active
+     jsClass: "js", // String: 'JS enabled' class which is added to <html> element
+     init: function () {}, // Function: Init callback
+     open: function () {}, // Function: Open callback
+     close: function () {}, // Function: Close callback
+   });
+   ```
 
 # Public methods
 
-See the [example code here](https://github.com/arielsalminen/responsive-nav.js/blob/master/demos/public-events/index.html) for the usage.
+See the [example code here](https://github.com/arielsalminen/responsive-nav.js/blob/master/demos/public-events/index.htmll) for the usage.
 
 `nav.toggle();`
 
@@ -94,11 +93,9 @@ See the [example code here](https://github.com/arielsalminen/responsive-nav.js/b
 
 `nav.resize();`
 
-
 # Changing the breakpoint
 
 Breakpoint is defined in the [responsive-nav.css](https://github.com/arielsalminen/responsive-nav.js/blob/master/responsive-nav.css) file. Responsive Nav checks on window resize and on orientation change if the navigation toggle has `display: none;` and based on that switches between mobile and desktop states.
-
 
 # Supporting old IEs
 
@@ -106,30 +103,27 @@ Even though Responsive Nav works even on IE6, you should remember that IE8 and u
 
 When old IE support is needed you should stick to using ID selector with Responsive Nav. That’s because the plugin uses `getElementById` method by default which is widely supported in all browsers. When using classes or element selectors `querySelector` will be used instead which isn’t supported in old IEs.
 
-
 # Things to keep in mind
 
 Calculated Max-height doesn't account for top/bottom padding on `.nav-collapse` (this is on purpose). If you need to add padding inside the nav, you can apply it to any other element, for example the `<ul>` inside `.nav-collapse`.
 
-
 # Tested on the following platforms
 
-* iOS 4.2.1+
-* Android 1.6+
-* Windows Phone 7.5+
-* Blackberry 7.0+
-* Blackberry Tablet 2.0+
-* Jolla 1.0+
-* Kindle 3.3+
-* Maemo 5.0+
-* Meego 1.2+
-* Symbian 3
-* Symbian Belle
-* Symbian S40 Asha
-* webOS 2.0+
-* Windows XP+
-* Mac OS X
-
+- iOS 4.2.1+
+- Android 1.6+
+- Windows Phone 7.5+
+- Blackberry 7.0+
+- Blackberry Tablet 2.0+
+- Jolla 1.0+
+- Kindle 3.3+
+- Maemo 5.0+
+- Meego 1.2+
+- Symbian 3
+- Symbian Belle
+- Symbian S40 Asha
+- webOS 2.0+
+- Windows XP+
+- Mac OS X
 
 # Working on the repository
 
@@ -140,25 +134,21 @@ npm install -g grunt-cli
 npm install
 ```
 
-
 ## Starting the server
 
 ```sh
 python -m SimpleHTTPServer 8000
 ```
 
-
 ## Git Hooks
 
 It is useful to setup a pre-commit and post-checkout hooks to smooth your workflow. On pre-commit we want to ensure that the project can build successfully, and on post-checkout we want to ensure that any new dependencies are installed via npm.
-
 
 ### Pre-Commit
 
 ```sh
 touch .git/hooks/pre-commit && echo -e '#!/bin/sh\ngrunt test' > .git/hooks/pre-commit && chmod +x .git/hooks/pre-commit
 ```
-
 
 ### Post-Checkout
 
@@ -182,7 +172,6 @@ grunt watch
 
 Next time you change the file, Grunt will perform all build tasks.
 
-
 ## Testing
 
 The test suite can be run with `grunt test` and is also part of the default Grunt task. This command runs all tests locally using PhantomJS.
@@ -195,18 +184,16 @@ The Karma server can be started with `grunt karma` and multiple browsers should 
 
 An easier way to test on multiple devices as part of the development cycle is to use karma with the watch task. Running `grunt karma watch` will automatically start the Karma server in the background and will run the tests automatically every time a file changes, on every connected device.
 
-
 # Special thanks
 
 In random order:
 
-* [Matteo Spinelli](https://twitter.com/cubiq)
-* [Matt Stow](https://twitter.com/stowball)
-* [Joao Carlos](https://twitter.com/jcxplorer)
-* [Vesa Vänskä](https://twitter.com/vesan)
-* [Andrea Carraro](https://github.com/toomuchdesign)
-* [Nick Williams](https://twitter.com/WickyNilliams)
-
+- [Matteo Spinelli](https://twitter.com/cubiq)
+- [Matt Stow](https://twitter.com/stowball)
+- [Joao Carlos](https://twitter.com/jcxplorer)
+- [Vesa Vänskä](https://twitter.com/vesan)
+- [Andrea Carraro](https://github.com/toomuchdesign)
+- [Nick Williams](https://twitter.com/WickyNilliams)
 
 # License
 
@@ -220,7 +207,6 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-
 # Changelog
 
 `1.0.39` (2015-04-09) - Adds Browserify support.
@@ -229,7 +215,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 `1.0.34` (2014-12-16) - Fixes versioning.
 
-`1.0.33` (2014-12-15) - "closeOnNavClick" now works on old IEs too, so no more features that only work in modern browsers. Fixes a bug which caused the navigation to sometimes not toggle.  Also fixes a bug in Safari that sometimes caused the navigation render incorrectly when switching between browser tabs. (+Adds more comments to the code.)
+`1.0.33` (2014-12-15) - "closeOnNavClick" now works on old IEs too, so no more features that only work in modern browsers. Fixes a bug which caused the navigation to sometimes not toggle. Also fixes a bug in Safari that sometimes caused the navigation render incorrectly when switching between browser tabs. (+Adds more comments to the code.)
 
 `1.0.32` (2014-03-05) - Ditching the `[].forEach.call(NodeList)` hack to make the code more sensible and future-proof.
 
@@ -264,7 +250,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 `v1.03` (2013-03-28) - Adds option to disable CSS3 transitions + three other options called "tabIndex", "openPos" and "jsClass".
 
 `v1.00` (2013-03-25) - Release. Big thank you’s for the help go out to [@cubiq](https://twitter.com/cubiq), [@stowball](https://twitter.com/stowball), [@jcxplorer](https://twitter.com/jcxplorer) and [@vesan](https://twitter.com/vesan)!
-
 
 # Want to do a pull request?
 
