@@ -146,12 +146,7 @@
   --color-bg-sidebar-project: #fdfdfd;
   --color-bg-sidebar-work: lemonchiffon;
   --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
-  --color-gradient-project-details: linear-gradient(
-    -225deg,
-    #ff057c 0%,
-    #8d0b93 50%,
-    #321575 100%
-  );
+  --color-gradient-project-details: #461224 40%;
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
@@ -527,6 +522,7 @@ sup {
   text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
   margin-inline: auto; /* Horizontally centers the text in its container */
   font-size: 1.5rem;
+  text-align: center;
 }
 
 /* Large project title — appears on individual project pages */
@@ -773,7 +769,7 @@ a.nav-link-primary:hover {
 
 .full-width-section {
   width: 100%;
-  min-height: 80vh; /* Takes up most of the screen height */
+  min-height: 60vh; /* Takes up most of the screen height */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -792,7 +788,7 @@ a.nav-link-primary:hover {
   align-items: center;
   justify-content: center;
   padding: var(--padding-small);
-  text-align: center; /* Keeps the text centered */
+  text-align: left; /* Keeps the text centered */
 }
 
 .section-container {
@@ -1391,6 +1387,10 @@ to keep your styles reusable and consistent.
     width: 100%;
   }
 }
+
+.full-width-section {
+  font-size: 1rem;
+}
 /* Switch from mobile to desktop navigation */
 
 @media (min-width: 992px) {
@@ -1407,7 +1407,7 @@ to keep your styles reusable and consistent.
     width: 66.666%;
   }
   .holding-page-title {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
 
   h1 {
