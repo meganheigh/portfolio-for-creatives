@@ -1218,6 +1218,15 @@ a.nav-link-primary:hover {
   width: 100%;
   margin-bottom: 1rem;
 }
+.project-role-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: var(--gap-medium); /* 3rem between columns */
+  padding: var(--padding-small); /* lines it up with the title and tags */
+  width: 100%;
+  margin-bottom: 5rem;
+}
 /* Container for project description */
 .project-description-container {
   display: flex;
@@ -1228,16 +1237,13 @@ a.nav-link-primary:hover {
   width: 100%;
   margin-bottom: 1rem; /* Space below the description */
 }
-
-.project-role-container {
+.project-description-two-column {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
   flex-direction: row;
-  padding: var(--padding-small);
+  justify-content: space-between;
+  gap: var(--gap-small);
   width: 100%;
-  gap: 3rem;
-  margin-bottom: 1rem; /* Space below the description */
+  margin-bottom: 1rem; /* Space below the two-column description */
 }
 
 /* Column styles for two-column and four-column layouts (mobile-first) */
