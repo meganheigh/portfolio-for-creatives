@@ -461,11 +461,12 @@ h2 {
 }
 
 h3 {
-  font-size: 2.25rem;
+  font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 1rem;
-  line-height: 1.4;
+  line-height: 2rem;
   color: var(--h3-color);
+  font-family: Fustat;
 }
 
 h4 {
@@ -1180,7 +1181,7 @@ a.nav-link-primary:hover {
 /* Full-width wrapper for the project section */
 .project-wrapper-full-width {
   width: 100%;
-  padding: var(--padding-small);
+  /*padding: var(--padding-small);*/
 }
 
 /* Container for the project content with full-width display */
@@ -1207,16 +1208,35 @@ a.nav-link-primary:hover {
   flex-direction: column;
   margin-bottom: 1rem; /* Space below the image */
 }
-
+.project-title-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem; /* Space below the title */
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-small);
+  width: 100%;
+  margin-bottom: 1rem;
+}
 /* Container for project description */
 .project-description-container {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  background: var(--color-bg-project-description);
   padding: var(--padding-small);
   width: 100%;
+  margin-bottom: 1rem; /* Space below the description */
+}
+
+.project-role-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: var(--padding-small);
+  width: 100%;
+  gap: 3rem;
   margin-bottom: 1rem; /* Space below the description */
 }
 
@@ -1475,8 +1495,9 @@ to keep your styles reusable and consistent.
   }
 
   h3 {
-    font-size: 1.625rem;
-    font-weight: 300;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
   }
 
   .h1-full-width,
@@ -1585,8 +1606,8 @@ to keep your styles reusable and consistent.
 
   /* Project Full Width Styles */
 
-  .project-wrapper-full-width {
-    padding: var(--padding-small) var(--padding-jumbo);
+  /*.project-wrapper-full-width {
+   /* padding: var(--padding-small) var(--padding-jumbo);
   }
 
   /* Sidebar on Large Devices */
@@ -1608,7 +1629,7 @@ to keep your styles reusable and consistent.
 
   .project-image-container,
   .project-description-container {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .section-container {
