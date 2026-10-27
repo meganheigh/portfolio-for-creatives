@@ -576,6 +576,15 @@ sup {
   color: var(--color-text-project-category);
 }
 
+.footer-tagline-text {
+  font-size: 3.5rem;
+  font-weight: 100;
+  font-family: var(--font-family-heading);
+  line-height: 1;
+  margin-bottom: 1rem;
+  color: var(--h1-color);
+}
+
 /*
 
 ██   ██ ██    ██ ██████  ███████ ██████  ██      ██ ███    ██ ██   ██ ███████ 
@@ -897,18 +906,6 @@ a.nav-link-primary:hover {
 .overlay-container:hover .overlay {
   opacity: 1;
 }
-.tag-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 16px;
-}
-.tag {
-  border: 1px solid #370217;
-  padding: 7px 10px;
-  border-radius: 25px;
-  width: fit-content;
-}
 
 /* Project container for background and padding */
 .project-container {
@@ -1029,37 +1026,41 @@ a.nav-link-primary:hover {
 /* Designed with mobile-first approach using CSS Grid                          */
 /* -------------------------------------------------------------------------- */
 
-.footer-content {
+.footer-global {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; /* Four equal columns */
+  grid-template-columns: 1fr; /* Single column layout */
   grid-gap: 3rem; /* Consistent spacing between sections */
   min-height: auto; /* Allows footer to expand based on content, no fixed height */
   background: var(--color-bg-footer); /* Using CSS variable for theming */
   padding: var(--padding-small); /* Internal spacing */
-  margin-top: var(--padding-large); /* Space above the footer */
-  margin-bottom: var(--padding-large); /* Space below the footer */
 
   /* Note: Using 'fr' units ensures proper scaling across devices */
 }
+
 /* -------------------------------------------------------------------------- */
 /* 🧩 FOOTER SECTION PLACEMENT                                                */
 /* Each component stacks vertically in mobile view                             */
 /* -------------------------------------------------------------------------- */
 
-.footer-tagline {
-  grid-column: 2/ 2; /* Full width (single column) */
-}
-/* Column 1: Tagline/Message */
-.footer-tagline {
+.footer-portrait {
   grid-row: 1 / 2;
+  background: orange;
 }
-.footer-end-title {
-  grid-column: 2/ 2;
+.footer-tagline {
+  grid-row: 2 / 3;
+  background: yellowgreen;
 }
 
-.photo-of-little-me {
-  width: 11rem;
+.footer-contact-social {
+  grid-row: 3 / 4;
+  background: lightblue;
 }
+
+.footer-sitemap {
+  grid-row: 4 / 5;
+  background: lightpink;
+}
+
 .scroll-top-button {
   padding: var(--padding-large);
   margin: var(--padding-large);
@@ -1184,7 +1185,7 @@ a.nav-link-primary:hover {
 /* Full-width wrapper for the project section */
 .project-wrapper-full-width {
   width: 100%;
-  /*padding: var(--padding-small);*/
+  padding: var(--padding-small);
 }
 
 /* Container for the project content with full-width display */
@@ -1210,34 +1211,46 @@ a.nav-link-primary:hover {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 1rem; /* Space below the image */
+  border: 3px solid red;
 }
 .project-title-container {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3rem; /* Space below the title */
-  align-items: flex-start;
-  justify-content: flex-start;
   padding: var(--padding-small);
   width: 100%;
   margin-bottom: 1rem;
+  background: hotpink;
 }
 .project-role-container {
   display: flex;
-  align-items: flex-start;
   flex-direction: row;
+  align-items: flex-start;
   gap: var(--gap-medium); /* 3rem between columns */
   padding: var(--padding-small); /* lines it up with the title and tags */
   width: 100%;
   margin-bottom: 5rem;
+  background: yellowgreen;
 }
 /* Container for project description */
 .project-description-container {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
+  padding: var(--padding-small);
   width: 100%;
   margin-bottom: 1rem; /* Space below the description */
+  background: blueviolet;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+.tag {
+  border: 1px solid #370217;
+  padding: 0.5rem 0.625rem;
+  border-radius: 1.5rem;
+  width: fit-content;
+}
+.full-width-text {
+  color: var(--color-accent-primary);
 }
 .project-description-two-column {
   display: flex;
@@ -1687,21 +1700,32 @@ to keep your styles reusable and consistent.
   .footer-global {
     padding-top: var(--padding-jumbo);
     padding-right: var(--padding-jumbo);
-    padding-bottom: 0;
+    padding-bottom: var(--padding-jumbo);
     padding-left: var(--padding-jumbo);
-    grid-template-rows: 1fr 1fr; /* Two equal rows */
+    grid-template-columns: 1fr 2fr 1fr 1fr; /* Four equal columns */
   }
 
-  /* Column 2: Awards & Works */
-  .footer-highlights {
+  .footer-portrait {
+    grid-column: 1/2;
     grid-row: 1 / 2;
-    grid-column: 2 / 3;
+    background: orange;
+  }
+  .footer-tagline {
+    grid-column: 2/3;
+    grid-row: 1 / 2;
+    background: yellowgreen;
   }
 
-  /* Column 3: Contact & Social */
   .footer-contact-social {
+    grid-column: 3/4;
     grid-row: 1 / 2;
-    grid-column: 3 / 4;
+    background: lightblue;
+  }
+
+  .footer-sitemap {
+    grid-column: 4/5;
+    grid-row: 1 / 2;
+    background: lightpink;
   }
 
   /* ------------------------------- */
