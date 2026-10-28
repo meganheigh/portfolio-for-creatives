@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="icon"
-      type="images/svg+xml"
+      type="image/svg+xml"
       href="assets/branding-images/favicon.svg"
     />
     <link
@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
-  <body class="index-page" id="top">
+  <body class="work-page" id="top">
     <section class="hero">
       <header class="hero-header">
         <ul class="nav-branding">
@@ -51,6 +51,10 @@
           <li class="nav-branding-item">
             <ul class="nav-branding-group">
               <li class="nav-branding-item">
+                <a href="index.html" class="nav-link-primary">Home</a>
+              </li>
+
+              <li class="nav-branding-item">
                 <a href="work-new.html" class="nav-link-primary">Work</a>
               </li>
               <li class="nav-branding-item">
@@ -60,27 +64,52 @@
           </li>
         </ul>
       </header>
-
-      <video autoplay muted loop playsinline id="background-video">
-        <source src="assets/Project/Header-Video/hero-video.mp4" />
-      </video>
-      <div>
-        <h1 class="home-header">Megan Heigh</h1>
+      <div class="hero-headline-wrapper">
+        <figure class="hero-image">
+          <img
+            src="assets/branding-images/hero-image.jpg"
+            width="1500"
+            height="750"
+            alt="Your Photo"
+          />
+        </figure>
+        <h1 class="hero-headline">
+          Megan Heigh is a Vancouver-based designer tending to all the itty
+          bitty things.
+        </h1>
       </div>
-      <footer class="hero-footer"></footer>
+      <footer class="hero-footer">
+        <ul class="hero-footer-navigation">
+          <li>
+            <!-- Update with your real Instagram link -->
+            <a
+              href="#https://www.instagram.com/lilyjones_art/"
+              class="nav-link-primary"
+              >Instagram</a
+            >
+          </li>
+          <li>
+            <!-- Update with your real email address -->
+            <a href="mailto:lilyrjones0@gmail.com" class="nav-link-primary"
+              >Email</a
+            >
+          </li>
+        </ul>
+      </footer>
     </section>
 
-    <section class="full-width-section">
-      <div class="full-width-headline-wrapper">
-        <h3 class="bio">
-          Vancouver-based designer tending to all the itty bitty things.
-        </h3>
-      </div>
-    </section>
+    <div id="myID" class="bottomMenu hide">
+      <a href="#">Back to top</a>
+    </div>
 
-    <div id="myID" class="bottomMenu hide"><a href="#">Back to top</a></div>
+    <div class="flier">
+      <img
+        src="assets/branding-images/smiley-face.svg"
+        alt="Describe your image"
+      />
+    </div>
 
-    <script type="text/javascript">
+    <script>
       myID = document.getElementById("myID");
 
       var myScrollFunc = function () {

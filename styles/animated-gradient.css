@@ -4,16 +4,16 @@
     #27dbb1,
     #18ffd5,
     #06ffde,
-    #58f1c1,
+    #1c9b73,
     #45e9d3,
     #24dbd2
   );
 }
 
 .gradient-animation {
-  background-size: 600%;
+  background-size: 200%;
   background-image: var(--gradient);
-  animation: bg-animation 90s infinite alternate;
+  animation: bg-animation 20s infinite alternate;
 }
 
 @keyframes bg-animation {

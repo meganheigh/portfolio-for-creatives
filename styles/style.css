@@ -443,16 +443,16 @@ svg {
 /* Heading Styles (h1 - h6) */
 
 h1 {
-  font-size: 6rem;
+  font-size: 2rem;
   font-weight: 100;
   font-family: var(--font-family-heading);
-  line-height: 6.25rem;
+  line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h1-color);
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 300;
   font-family: var(--font-family-heading);
   line-height: 1.2;
@@ -532,8 +532,8 @@ sup {
   max-width: 20ch; /* Optimal line length for readability (~40 characters) */
   text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
   margin-inline: auto; /* Horizontally centers the text in its container */
-  font-size: 6rem;
-  font-weight: 250;
+  font-size: 2rem;
+  font-weight: 200;
   text-align: center;
 }
 
@@ -695,9 +695,13 @@ a.nav-link-primary:hover {
 
 .hero {
   width: 100%;
-  min-height: 20vh; /* Takes up most of the screen height */
+  min-height: 100vh; /* Takes up most of the screen height */
   display: flex;
   flex-direction: column;
+}
+
+.hero-image {
+  width: 90%;
 }
 .home-header {
   padding: 1rem;
@@ -742,20 +746,13 @@ a.nav-link-primary:hover {
 
 .hero-headline-wrapper {
   width: 100%;
-  background-color: #00ffff;
   display: flex;
   flex-direction: column;
   flex: 1;
-  /* gap: 3rem; */
   align-items: center;
   justify-content: center;
   padding: var(--padding-xsmall);
   text-align: center; /* Keeps text centered */
-  /* position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0; */
 }
 
 .hero-icon {
@@ -1211,7 +1208,6 @@ a.nav-link-primary:hover {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 1rem; /* Space below the image */
-  border: 3px solid red;
 }
 .project-title-container {
   padding: var(--padding-small);
@@ -1570,7 +1566,12 @@ to keep your styles reusable and consistent.
   }
 
   .hero {
-    min-height: 20vh;
+    min-height: 100vh;
+  }
+
+  .hero-image {
+    width: 50%;
+    border: 3px solid red;
   }
 
   .hero-headline {
