@@ -1006,7 +1006,6 @@ a.nav-link-primary:hover {
 .about-image {
   width: 100%;
   aspect-ratio: 16 / 9; /* Sets the shape/proportion for desktop */
-  overflow: hidden;
 }
 /* 
 

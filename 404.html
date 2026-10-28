@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>
+      Free Creative Portfolio Template: October 2025 Version | Work Page
+    </title>
+    <meta
+      name="description"
+      content="When writing a meta description, keep it between 140 and 160 characters so Google can display your entire message. Don’t forget to include your keyword!"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/branding-images/favicon.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/branding-images/favicon.png"
+    />
+    <meta property="og:image" content="screenshot.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+
+  <body class="work-page" id="top">
+    <section class="hero">
+      <header class="hero-header">
+        <ul class="nav-branding">
+          <!-- Logo (standalone LI) -->
+          <li class="nav-branding-logo">
+            <a href="index.html">
+              <img
+                src="assets/branding-images/MH_PersonalLogo.svg"
+                alt="Your portfolio logo"
+              />
+            </a>
+          </li>
+          <li class="nav-branding-item">
+            <ul class="nav-branding-group">
+              <li class="nav-branding-item">
+                <a href="index.html" class="nav-link-primary">Home</a>
+              </li>
+
+              <li class="nav-branding-item">
+                <a href="work-new.html" class="nav-link-primary">Work</a>
+              </li>
+              <li class="nav-branding-item">
+                <a href="about.html" class="nav-link-primary">About</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </header>
+      <div class="hero-headline-wrapper">
+        <figure class="hero-image">
+          <img
+            src="assets/branding-images/hero-image.jpg"
+            width="1500"
+            height="750"
+            alt="Your Photo"
+          />
+        </figure>
+        <h1 class="hero-headline">Oops, a little mis-stitch.</h1>
+        <p>Let's pick up the thread and get you back on your way.</p>
+      </div>
+    </section>
+    <ul class="footer-global">
+      <li class="footer-portrait">
+        <figure class="photo-of-little-me">
+          <img
+            src="assets/branding-images/megan-heigh-young.jpg"
+            width="500"
+            height="500"
+            loading="lazy"
+            alt="Photo of toddler Megan"
+          />
+        </figure>
+      </li>
+      <li class="footer-tagline">
+        <p class="footer-tagline-text">It’s the little things.</p>
+      </li>
+      <li class="footer-contact-social">
+        <h2>Contact</h2>
+        <ul class="footer-contact-list">
+          <li class="footer-item">
+            <a href="#">Email</a>
+          </li>
+          <li class="footer-item">
+            <a href="#">LinkedIn</a>
+          </li>
+          <li class="footer-item">
+            <a href="#">Behance</a>
+          </li>
+          <li class="footer-item">
+            <a href="#">Instagram</a>
+          </li>
+        </ul>
+      </li>
+      <li class="footer-sitemap">
+        <h2>Pages</h2>
+        <ul class="footer-pages-list">
+          <li class="footer-item"><a href="#">Home</a></li>
+          <li class="footer-item"><a href="#">Work</a></li>
+          <li class="footer-item"><a href="#">About</a></li>
+          <li class="footer-item"><a href="#">Play</a></li>
+        </ul>
+      </li>
+    </ul>
+    <div id="myID" class="bottomMenu hide">
+      <a href="#">Back to top</a>
+    </div>
+
+    <div class="flier">
+      <img
+        src="assets/branding-images/smiley-face.svg"
+        alt="Describe your image"
+      />
+    </div>
+
+    <script>
+      myID = document.getElementById("myID");
+
+      var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 800) {
+          myID.className = "bottomMenu show";
+        } else {
+          myID.className = "bottomMenu hide";
+        }
+      };
+
+      window.addEventListener("scroll", myScrollFunc);
+    </script>
+  </body>
+</html>
