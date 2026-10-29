@@ -470,7 +470,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 3.1rem;
   margin-bottom: 1rem;
@@ -529,10 +529,10 @@ sup {
 /* Main hero headline — usually sits in the intro section */
 .hero-headline {
   color: var(--color-accent-primary); /* Uses your brand's dominant color */
-  max-width: 20ch; /* Optimal line length for readability (~40 characters) */
+  max-width: 30ch; /* Optimal line length for readability (~40 characters) */
   text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
   margin-inline: auto; /* Horizontally centers the text in its container */
-  font-size: 2rem;
+  font-size: 0.9rem;
   font-weight: 200;
   text-align: center;
 }
@@ -986,10 +986,9 @@ a.nav-link-primary:hover {
 /* Grid container for the About section */
 .about-grid {
   display: grid; /* Set to grid layout */
-  grid-template-columns: 1fr; /* Single column layout for mobile and smaller screens */
   grid-gap: 3rem; /* Space between grid items */
   background: var(--color-bg-about); /* Background color for the section */
-  padding: var(--padding-small); /* Padding around the grid */
+  padding: var(--padding-large); /* Padding around the grid */
   flex: 1; /* Flex-grow to take up available space */
 }
 
@@ -1006,6 +1005,12 @@ a.nav-link-primary:hover {
 .about-image {
   width: 100%;
   aspect-ratio: 16 / 9; /* Sets the shape/proportion for desktop */
+}
+
+.about-bio {
+  font-size: 0.7rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
 }
 /* 
 
@@ -1040,21 +1045,17 @@ a.nav-link-primary:hover {
 
 .footer-portrait {
   grid-row: 1 / 2;
-  background: orange;
 }
 .footer-tagline {
   grid-row: 2 / 3;
-  background: yellowgreen;
 }
 
 .footer-contact-social {
   grid-row: 3 / 4;
-  background: lightblue;
 }
 
 .footer-sitemap {
   grid-row: 4 / 5;
-  background: lightpink;
 }
 
 .scroll-top-button {
@@ -1570,12 +1571,12 @@ to keep your styles reusable and consistent.
 
   .hero-image {
     width: 50%;
-    border: 3px solid red;
   }
 
   .hero-headline {
     max-width: 40ch; /* Optimal line length for readability (~40 characters) */
-    font-size: 2.5rem;
+    line-height: 1.2;
+    font-size: 1.5rem;
   }
 
   .hero-headline-wrapper {
@@ -1681,7 +1682,7 @@ to keep your styles reusable and consistent.
 
   .about-grid {
     padding: var(--padding-jumbo);
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr;
   }
 
   .about-grid-image {
@@ -1692,7 +1693,11 @@ to keep your styles reusable and consistent.
     grid-row: 1 / 2;
     grid-column: 2 / 3;
   }
-
+  .about-bio {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
   /* ------------------------------- */
   /* 🖥️ FOOTER GRID - DESKTOP LAYOUT */
   /* ------------------------------- */
@@ -1708,24 +1713,20 @@ to keep your styles reusable and consistent.
   .footer-portrait {
     grid-column: 1/2;
     grid-row: 1 / 2;
-    background: orange;
   }
   .footer-tagline {
     grid-column: 2/3;
     grid-row: 1 / 2;
-    background: yellowgreen;
   }
 
   .footer-contact-social {
     grid-column: 3/4;
     grid-row: 1 / 2;
-    background: lightblue;
   }
 
   .footer-sitemap {
     grid-column: 4/5;
     grid-row: 1 / 2;
-    background: lightpink;
   }
 
   /* ------------------------------- */
