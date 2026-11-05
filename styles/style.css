@@ -1476,6 +1476,10 @@ to keep your styles reusable and consistent.
 
 /* Large devices (desktops, 992px and up) */
 
+.header-dottedline {
+  max-width: 500px;
+}
+
 @media (min-width: 768px) {
   .hero-headline {
     font-size: 1.5rem;
