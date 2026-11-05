@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 
 <!-- 
@@ -50,31 +45,65 @@ For comprehensive SEO resources tailored for designers, including sitemap best p
 -->
 
 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url>
-  <loc>https://portfolio-2022.netlify.app/</loc>
-  <lastmod>2021-11-18T08:55:17+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://meganheigh.ca/</loc>
+<lastmod>2026-11-03T01:13:49+00:00</lastmod>
+<priority>1.0000</priority>
 </url>
 <url>
-  <loc>https://portfolio-2022.netlify.app/index.html</loc>
-  <lastmod>2021-11-18T08:55:17+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://meganheigh.ca/index.html</loc>
+<lastmod>2026-11-03T01:13:49+00:00</lastmod>
+<priority>0.8000</priority>
 </url>
 <url>
-  <loc>https://portfolio-2022.netlify.app/about.html</loc>
-  <lastmod>2021-11-18T08:55:17+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://meganheigh.ca/work-new.html</loc>
+<lastmod>2026-11-03T01:13:49+00:00</lastmod>
+<priority>0.8000</priority>
 </url>
 <url>
-  <loc>https://portfolio-2022.netlify.app/project-1.html</loc>
-  <lastmod>2021-11-18T08:55:17+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://meganheigh.ca/about.html</loc>
+<lastmod>2026-11-03T01:13:49+00:00</lastmod>
+<priority>0.8000</priority>
 </url>
 <url>
-  <loc>https://portfolio-2022.netlify.app/project-2.html</loc>
-  <lastmod>2021-11-18T08:55:17+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://meganheigh.ca/project1-new.html</loc>
+<lastmod>2026-11-03T01:13:49+00:00</lastmod>
+<priority>0.6400</priority>
 </url>
-
-
+<url>
+<loc>https://meganheigh.ca/project2-new.html</loc>
+<lastmod>2026-11-03T01:13:49+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://meganheigh.ca/project3-new.html</loc>
+<lastmod>2026-11-03T01:13:49+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://meganheigh.ca/project4-new.html</loc>
+<lastmod>2026-11-03T01:13:49+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://meganheigh.ca/project5-new.html</loc>
+<lastmod>2026-11-03T01:13:49+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://meganheigh.ca/components</loc>
+<lastmod>2026-11-03T01:13:49+00:00</lastmod>
+<priority>0.5120</priority>
+</url>
+<url>
+<loc>https://meganheigh.ca/404.html</loc>
+<lastmod>2026-11-03T01:13:49+00:00</lastmod>
+<priority>0.4096</priority>
+</url>
+<url>
+<loc>https://meganheigh.ca/components.html</loc>
+<lastmod>2026-11-03T01:13:49+00:00</lastmod>
+<priority>0.4096</priority>
+</url>
 </urlset>
