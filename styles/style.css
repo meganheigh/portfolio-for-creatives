@@ -150,7 +150,7 @@
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
-  --color-bg-selection: #5200ff;
+  --color-bg-selection: #461224;
   --color-shadow-stroke: rgba(0, 0, 0, 0.4);
   /* Assets */
   --image-noise-texture: url(/assets/temp/noise.svg);
@@ -233,6 +233,7 @@ body {
   background: var(
     --color-bg-selection
   ); /* Uses your custom color for highlighted text */
+  color: white;
 }
 
 /* ---------------------------------------- */
@@ -532,7 +533,7 @@ sup {
   max-width: 30ch; /* Optimal line length for readability (~40 characters) */
   text-wrap: balance; /* Prevents awkward line breaks (like elegant typography) */
   margin-inline: auto; /* Horizontally centers the text in its container */
-  font-size: 0.9rem;
+  font-size: 1.8rem;
   font-weight: 200;
   text-align: center;
 }
@@ -702,6 +703,8 @@ a.nav-link-primary:hover {
 
 .hero-image {
   width: 90%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
 }
 .home-header {
   padding: 1rem;
@@ -1008,7 +1011,7 @@ a.nav-link-primary:hover {
 }
 
 .about-bio {
-  font-size: 0.7rem;
+  font-size: 1.4rem;
   font-weight: 300;
   margin-bottom: 1rem;
 }
@@ -1045,6 +1048,7 @@ a.nav-link-primary:hover {
 
 .footer-portrait {
   grid-row: 1 / 2;
+  padding: 3rem;
 }
 .footer-tagline {
   grid-row: 2 / 3;
@@ -1476,10 +1480,6 @@ to keep your styles reusable and consistent.
 
 /* Large devices (desktops, 992px and up) */
 
-.header-dottedline {
-  max-width: 500px;
-}
-
 @media (min-width: 768px) {
   .hero-headline {
     font-size: 1.5rem;
@@ -1698,7 +1698,8 @@ to keep your styles reusable and consistent.
     grid-column: 2 / 3;
   }
   .about-bio {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
     font-weight: 300;
     margin-bottom: 1rem;
   }
@@ -1717,6 +1718,7 @@ to keep your styles reusable and consistent.
   .footer-portrait {
     grid-column: 1/2;
     grid-row: 1 / 2;
+    padding: 0;
   }
   .footer-tagline {
     grid-column: 2/3;

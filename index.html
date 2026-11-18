@@ -49,14 +49,14 @@
             </a>
           </li>
           <li class="nav-branding-item">
-            <figure class="header-dottedline">
-              <img
-                src="assets/branding-images/dotted-line_forweb.png"
-                width="1120"
-                height="70"
-                alt="Your Photo"
-              />
-            </figure>
+            <img
+              src="assets/branding-images/dotted-line_forweb.png"
+              width="1120"
+              height="70"
+              alt="Your Photo"
+            />
+          </li>
+          <li class="nav-branding-item">
             <ul class="nav-branding-group">
               <li class="nav-branding-item">
                 <a href="work-new.html" class="nav-link-primary">Work</a>
@@ -69,14 +69,17 @@
         </ul>
       </header>
       <div class="hero-headline-wrapper">
-        <figure class="hero-image">
-          <img
-            src="assets/branding-images/meganh-name-hero-image.jpg"
-            width="1500"
-            height="750"
-            alt="Your Photo"
-          />
-        </figure>
+        <a href="work-new.html">
+          <figure class="hero-image" id="image-wrapper">
+            <img
+              id="image"
+              src="assets/branding-images/meganh-name-hero-image.jpg"
+              width="1500"
+              height="750"
+              alt="Your Photo"
+            />
+          </figure>
+        </a>
         <h1 class="hero-headline">
           Megan Heigh is a Vancouver-based designer tending to all the itty
           bitty things.
@@ -120,5 +123,7 @@
 
       window.addEventListener("scroll", myScrollFunc);
     </script>
+
+    <script type="module" src="./js/random-image-hover.js"></script>
   </body>
 </html>
