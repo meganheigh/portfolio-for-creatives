@@ -1217,7 +1217,6 @@ a.nav-link-primary:hover {
   padding: var(--padding-small);
   width: 100%;
   margin-bottom: 1rem;
-  background: hotpink;
 }
 .project-role-container {
   display: flex;
@@ -1227,14 +1226,12 @@ a.nav-link-primary:hover {
   padding: var(--padding-small); /* lines it up with the title and tags */
   width: 100%;
   margin-bottom: 5rem;
-  background: yellowgreen;
 }
 /* Container for project description */
 .project-description-container {
   padding: var(--padding-small);
   width: 100%;
   margin-bottom: 1rem; /* Space below the description */
-  background: blueviolet;
 }
 
 .tag-list {
